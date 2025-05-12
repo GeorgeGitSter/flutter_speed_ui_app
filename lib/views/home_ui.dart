@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_ui_app/views/a01_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/b01_page_ui.dart';
 import 'package:flutter_speed_ui_app/views/e01_page_ui.dart';
 
 class HomeUI extends StatelessWidget {
@@ -54,7 +55,14 @@ class HomeUI extends StatelessWidget {
                 height: 20,
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => B01PageUi(),
+                    ),
+                  );
+                },
                 child: Text(
                   'Go to B Page',
                   style: TextStyle(fontSize: 20, color: Colors.white),

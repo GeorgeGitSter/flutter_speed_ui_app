@@ -73,6 +73,13 @@ class _A02PageUIState extends State<A02PageUI> {
                           color: Colors.white,
                         ),
                       ),
+                      focusedBorder: OutlineInputBorder(
+                        // พิมพ์แล้วขอบโค้ง
+                        borderRadius: BorderRadius.circular(15),
+                        borderSide: BorderSide(
+                          color: Colors.white,
+                        ),
+                      ),
                       contentPadding:
                           EdgeInsets.symmetric(vertical: 20, horizontal: 16),
                       hintText: 'Username , Email & Phone Number',
@@ -97,6 +104,13 @@ class _A02PageUIState extends State<A02PageUI> {
                       fillColor: Colors.grey[200],
                       border: InputBorder.none, // ไม่มีขอบ
                       enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(15),
+                        borderSide: BorderSide(
+                          color: Colors.white,
+                        ),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        // พิมพ์แล้วขอบโค้ง
                         borderRadius: BorderRadius.circular(15),
                         borderSide: BorderSide(
                           color: Colors.white,
