@@ -302,7 +302,7 @@ class _E02PageUIState extends State<E02PageUI> {
             ),
             SizedBox(
               height: 40,
-            )
+            ),
           ],
         ),
       ),
