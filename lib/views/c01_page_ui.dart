@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/c02_page_ui.dart';
 
 class C01PageUI extends StatefulWidget {
   const C01PageUI({super.key});
@@ -15,10 +16,20 @@ class _C01PageUIState extends State<C01PageUI> {
         child: Stack(
           // ใช้ Stack เพื่อซ้อนทับ Widget
           children: [
-            Image.asset(
-              'assets/images/imgc1.png',
-              width: double.infinity,
-              fit: BoxFit.cover,
+            InkWell(
+              onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => C02PageUI(),
+                    ),
+                  );
+                },
+              child: Image.asset(
+                'assets/images/imgc1.png',
+                width: double.infinity,
+                fit: BoxFit.cover,
+              ),
             ),
             Positioned.fill(
               // ใช้ Positioned เพื่อกำหนดตำแหน่งของ imgc2
