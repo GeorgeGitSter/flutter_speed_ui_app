@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_ui_app/views/d03_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/d04_page_ui.dart';
 
 class D02PageUI extends StatefulWidget {
   const D02PageUI({super.key});
@@ -134,7 +135,14 @@ class _D02PageUIState extends State<D02PageUI> {
                 child: Align(
                   alignment: Alignment.centerRight,
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => D04PageUI(),
+                          ),
+                        );
+                    },
                     child: Text(
                       'Forgot Password?',
                       style: TextStyle(fontSize: 15, color: Colors.black),

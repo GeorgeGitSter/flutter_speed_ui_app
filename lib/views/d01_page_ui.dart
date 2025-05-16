@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/views/d02_page_ui.dart';
+import 'package:flutter_speed_ui_app/views/d03_page_ui.dart';
 
 class D01PageUI extends StatefulWidget {
   const D01PageUI({super.key});
@@ -53,7 +55,14 @@ class _D01PageUIState extends State<D01PageUI> {
                           ),
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => D02PageUI(),
+                          ),
+                        );
+                      },
                       child: const Text(
                         "Login",
                         style: TextStyle(
@@ -83,12 +92,19 @@ class _D01PageUIState extends State<D01PageUI> {
                           ),
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => D03PageUI(),
+                          ),
+                        );
+                      },
                       child: const Text("Register",
                           style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.w500,
-                      )),
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                          )),
                     ),
                   ),
 
