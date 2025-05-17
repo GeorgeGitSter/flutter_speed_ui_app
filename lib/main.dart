@@ -36,6 +36,7 @@ class FlutterSpeedUi extends StatefulWidget {
 
 class _FlutterSpeedUiState extends State<FlutterSpeedUi> {
   @override
+
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,

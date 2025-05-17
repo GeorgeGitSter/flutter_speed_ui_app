@@ -85,7 +85,7 @@ class _D07PageUIState extends State<D07PageUI> {
               ),
               SizedBox(
                 height: 100,
-              )
+              ),
             ],
           ),
         ),

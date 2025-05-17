@@ -21,7 +21,10 @@ class _A01PageUIState extends State<A01PageUI> {
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40.0),
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(60.0),
+                    bottomRight: Radius.circular(60.0),
+                  ),
                   color: Color(0xFFF89AEE),
                 ),
                 child: Stack(
